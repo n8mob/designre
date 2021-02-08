@@ -1,0 +1,9 @@
+{% load markdown_extras %}
+
+{% for design in object_list %}
+    <div>
+        <h2>{{ design.title }}</h2>
+        <p>{{ design.body | markdown | safe }}</p>
+    </div>
+    <hr/>
+{% endfor %}
