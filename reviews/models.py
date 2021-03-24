@@ -47,4 +47,4 @@ class Review(models.Model):
         return self.process.processstep_set.order_by('order')
 
     def __str__(self):
-        return f'{self.process} {self.design}'
+        return f'{self.process} of {self.design}'
